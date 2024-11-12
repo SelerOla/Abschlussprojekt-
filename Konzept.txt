@@ -1,0 +1,83 @@
+Konzept für Abschlussproject: Covid-19
+ 
+ 
+Thema
+Explorative Datenanalyse (EDA) zum Thema COVID-19 in Python
+
+ 
+Titel
+...
+ 
+Motivation
+Covid-19 hat einen großen Einfluss auf das Leben der Menschen in verschiedenen Bereichen gehabt. Mit Hilfe der EDA zum Thema COVID-19 kann ein besserer Verständnis der Pandemieentwicklung gegeben und effektivere Maßnahmen entwickelt werden. So kann ein Fundament geschaffen werden, das es ermöglicht, COVID-19-Daten auf eine sinnvolle Weise zu analysieren und Erkenntnisse zu gewinnen, die für das Management der Pandemie, das Verständnis ihres Verlaufs und die Planung zukünftiger Strategien entscheidend sind.
+Je nach dem genutzten/ die genutzten Dataset/s kann folgendes Untersucht werden.
+ 
+Die EDA kann z.B. helfen, Wellen und Höhepunkte zu identifizieren, saisonale Trends zu erkennen und zu analysieren, wie unterschiedliche Phasen der Pandemie verlaufen sind.
+Weiterhin können Zusammenhänge zwischen verschiedenen Variablen (z.B.Impfungen und Bevölkerungsdichte) aufzuzeigen. So können Risikofaktoren (z.B. Risikofaktoren für schwere Verläufe etc.) identifiziert werden. Außerdem kann versucht werden, die Wirksamkeit verschiedener Maßnahmen (Lockdown, Impfungen etc.) zu bewerten. Darüber hinaus kann ein Zusammenhang zwischen Impfquoten und Infektionsverlauf sowie Todesraten aufgezeigt werden. So können Hypothesen zur Wirksamkeit der Impfungen bestätigt oder widerlegt werden.
+ 
+ 
+Data/Dataset
+- Datenset aus Kaggle oder anderweitige CSV Dateien
+ 
+
+Fragen/Hypothesen
+1. Gibt es eine starke Korrelation zwischen Infektionsraten und Todesfällen?
+2. Existieren Regionale Unterschiede und welche Faktoren führen zu den Unterschieden (z.B. Bevölkerungsdichte, Gesundheitssystem)
+3. Gibt es eine Verbindung zwischen Impfquote und Infektionszahlen? (Impfstatus und Infektionsgeschehen analysieren)
+ 
+
+Vorgehen (erste Ideen; je nach Dataset):
+1. Programmsprache: Python mit benötigten Bibliotheken (pandas, seaborn, plotly, matplotlib, numpy…)
+2. Datenvisualisation: Tableau
+3. Programm: VS Code mit Jupyter Notebook oder Google Colab zum kollektiven Arbeiten
+ 
+
+Datenimport und erste Übersicht
+1. Daten laden mit pd.read_csv()
+2. Ersten Eindruck über den Datensatz erhalten (Spalten, Datentyp…): df.head(); df.info(); df.describe()
+3. Prüfen, ob das Datum korrekt ist —> ggf. mit pd.to_datetime() konvertieren
+ 
+
+Datenbereinigung
+1. Datenset auf fehlende Werte überprüfen mit df.isnull().sum()
+- Bei fehlenden Werten: fehlende Werte auffüllen oder Zeilen entfernen
+2. Auf Duplikate überprüfen mit df.duplicated() und evtl. entfernen
+ 
+
+Neue Variablen erstellen
+1. Z.B. Neue Spalten erstellen (Tagesfälle —> Differenz zwischen den Infektionszahlen zweier aufeinanderfolgender Tage)
+2. 7-Tages-Durchschnitt der Infektionen und Todesfälle
+3. Impfstatus der Bevölkerung (Prozent geimpfter Bevölkerung, Wie oft geimpft, welchen Impfstoff…)
+ 
+
+Untersuchung der Verteilungen und Trends (Verstehe die Grundverteilungen und identifiziere mögliche saisonale Muster oder besondere Ereignisse.)
+1. Histogramme und Boxplots erstellen (z.B. für tägliche Infektionen und Todesfälle)
+2. Verteilung von den einzelnen Ländern
+
+
+Zeitreihenanalyse (Analysiere, wie sich die COVID-19-Zahlen über die Zeit entwickelt haben)
+1. täglichen Fälle visualisieren (Todesfälle und Impfungen) mit sns.lineplot() oder plt.plot()
+2. Diagramme erstellen mit Durchschnitt (saisonale Schwankungen, Trends…)
+3. Analysieren nach signifikanten Wellen + Faktoren (z.B. Feiertage, Lockdowns…)
+ 
+
+Korrelationen zwischen Variablen
+1. Zusammenhänge zw. Covid-Variablen und anderen Faktoren
+2. Korrelationsmatrix zwischen den relevanten numerischen Variablen (täglichen Fälle, Todesfälle, Hospitalisierungen und Impfungen (df.corr() und sns.heatmap()).
+ 
+
+Länder- und Regionenvergleich
+1. Datenvergleich der Covid-19 Entwicklung zwischen verschiedenen Ländern oder Regionen
+2. Datengruppierung nach Ländern und Erstellung aggregierte Werte, ür z.B. Gesamtfälle, Todesfälle und Impfquoten…
+3. Mit Barplots und Heatmaps Verteilung über verschiedene Länder und Regionen zu visualisieren (sns.barplot() oder sns.heatmap()).
+ 
+
+Impfstatus und Infektionsgeschehen analysieren
+1. Scatterplots erstellen, um den Zusammenhang zwischen Impfquote und Infektionszahlen bzw. Todeszahlen darzustellen (sns.scatterplot()).
+2. Geht ein höherer Impfstatus mit niedrigeren Infektions- und Todeszahlen einher und wie stark  ist dieser Zusammenhang?
+ 
+
+Visualisierung und Zusammenfassung
+1. Grafiken erstellen und zentrale Erkenntnisse visualisieren
+2. Seaborn und Matplotlib nutzen um aussagekräftige Diagramme zu erstellen (Trends, Vergleiche, Korrelationen)
+3. Zusammenfassung der Haupt-Erkenntnisse schreiben

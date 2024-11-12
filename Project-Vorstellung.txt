@@ -1,0 +1,45 @@
+For EDA project:
+
+1. Title (can be changed later):
+
+
+
+2. Group members: 
+
+Alexandra Kieler
+Alexandra Prömper
+Tatiana Kister
+Vera Warmuth
+
+
+
+3. Motivation:
+
+Covid-19 hat einen großen Einfluss auf das Leben der Menschen in verschiedenen Bereichen gehabt. 
+Mit Hilfe der EDA zum Thema COVID-19 kann ein besserer Verständnis der Pandemieentwicklung gegeben und effektivere Maßnahmen entwickelt werden. 
+So kann ein Fundament geschaffen werden, das es ermöglicht, COVID-19-Daten auf eine sinnvolle Weise zu analysieren und Erkenntnisse zu gewinnen, die für das Management der Pandemie, das Verständnis ihres Verlaufs und die Planung zukünftiger Strategien entscheidend sind.
+Je nach dem genutzten/ die genutzten Dataset/s kann folgendes Untersucht werden.
+ 
+Die EDA kann z.B. helfen, Wellen und Höhepunkte zu identifizieren, saisonale Trends zu erkennen und zu analysieren, wie unterschiedliche Phasen der Pandemie verlaufen sind.
+Weiterhin können Zusammenhänge zwischen verschiedenen Variablen (z.B.Impfungen und Bevölkerungsdichte) aufzuzeigen. So können Risikofaktoren (z.B. Risikofaktoren für schwere Verläufe etc.) identifiziert werden. Außerdem kann versucht werden, die Wirksamkeit verschiedener Maßnahmen (Lockdown, Impfungen etc.) zu bewerten. Darüber hinaus kann ein Zusammenhang zwischen Impfquoten und Infektionsverlauf sowie Todesraten aufgezeigt werden. So können Hypothesen zur Wirksamkeit der Impfungen bestätigt oder widerlegt werden.
+ 
+
+
+4. Stakeholder information:
+
+Health agencies, researchers, policymakers, and the general public interested in understanding the progression of the pandemic.
+
+
+5. Frame few hypothesis to explore your data:
+
+These hypothesis might change. 
+
+1. There is a strong correlation between infection rates and deaths.
+2. There are regional differences due to various factors (e.g. population density, healthcare system).
+3. There is a link between vaccination rates and infection rates.
+4. The number of infections is highly correlated with population density.
+5. Countries with higher vaccination rates have lower mortality rates.
+6. Certain seasons may impact the speed of virus spread.
+
+
+6. Recommendation to the stakeholders:
